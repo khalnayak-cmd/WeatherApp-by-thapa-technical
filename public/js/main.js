@@ -54,7 +54,7 @@ getInfo = async (e) => {
         datahide.classList.add('data_hide')
     } else {
         try {
-            url = `http://api.openweathermap.org/data/2.5/weather?q=${cityName.value}&units=metric&appid=8a382ab59c064e92045d210ffc33646d`
+            url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName.value}&units=metric&appid=8a382ab59c064e92045d210ffc33646d`
             response = await fetch(url)
             data = await response.json()
             arrData = [data]
