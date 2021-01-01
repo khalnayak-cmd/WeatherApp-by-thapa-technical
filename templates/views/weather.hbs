@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    {{>cdn_links}}
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    {{>navbar}}
+
+    <!-- main header  -->
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="main_content">
+                    <form class="temp_form">
+                        <input type="text" id="cityName" placeholder="Enter your city Name..." autocomplete="off">
+                        <input type="submit" value="search" id="submitBtn">
+                    </form>
+                </div>
+                <div class="tempInfo">
+                    <div class="top_layer">
+                        <p id="day">day</p>
+                        <p id="date">date</p>
+                    </div>
+                    <div class="main_layer">
+                        <p id="city_name">city</p>
+                        <div class="middle_layer data_hide">
+                            <p id="temp"><span>0</span><sup>0</sup>C</p>
+                            <p id="temp_status">
+                                <i class="fa fa-cloud"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer part -->
+    {{>footer}}
+    <script src="js/main.js"></script>
+</body>
+
+</html>
